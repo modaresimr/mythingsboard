@@ -1,1 +1,1 @@
-mvn  -DskipTests=true install -Ddockerfile.skip=false
+mvn  -DskipTests=true install -Ddockerfile.skip=false -X -Dlicense.skip=true
