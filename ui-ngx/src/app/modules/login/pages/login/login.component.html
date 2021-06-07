@@ -28,19 +28,21 @@
           <span style="height: 4px;" *ngIf="!(isLoading$ | async)"></span>
           <div tb-toast fxLayout="column" class="layout-padding">
             <span style="height: 50px;"></span>
-            <div class="oauth-container tb-default" fxLayout="column" fxLayoutGap="16px" *ngIf="oauth2Clients?.length">
+            <div class="oauth-container tb-default" fxLayout="column" fxLayoutGap="16px" *ngIf="true||oauth2Clients?.length">
               <ng-container *ngFor="let oauth2Client of oauth2Clients">
                 <a mat-raised-button class="login-with-button" href="{{ oauth2Client.url }}">
                   <mat-icon class="icon" svgIcon="{{ oauth2Client.icon }}"></mat-icon>
                   {{ 'login.login-with' | translate: {name: oauth2Client.name} }}
                 </a>
               </ng-container>
-              <div class="container-divider">
+             
+              <div class="container-divider" (click)="alihide = !alihide">
                 <div class="line"><mat-divider></mat-divider></div>
                 <div class="text mat-typography">{{ "login.or" | translate | uppercase }}</div>
                 <div class="line"><mat-divider></mat-divider></div>
               </div>
             </div>
+           <div *ngIf="!alihide" [attr.aria-pressed]="alihide">
             <mat-form-field>
               <mat-label translate>login.username</mat-label>
               <input id="username-input" matInput type="email" autofocus formControlName="username" email required/>
@@ -67,7 +69,8 @@
               <button mat-raised-button color="accent" [disabled]="(isLoading$ | async)"
                       type="submit">{{ 'login.login' | translate }}</button>
             </div>
-          </div>
+           </div>
+         </div>
         </fieldset>
       </form>
     </mat-card-content>
