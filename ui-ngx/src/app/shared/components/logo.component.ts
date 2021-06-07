@@ -23,10 +23,12 @@ import { Component } from '@angular/core';
 })
 export class LogoComponent {
 
-  logo = 'assets/logo_title_white.svg';
+  // logo = 'assets/logo_title_white.svg';
+  logo = 'https://iot.m3la.org/wp-content/uploads/2020/12/cropped-1_92OdlxNqI3iChI5kNl1MFg1-32x32.jpeg';
 
   gotoThingsboard(): void {
-    window.open('https://thingsboard.io', '_blank');
+    // window.open('https://thingsboard.io', '_blank');
+    window.open('https://iot.m3la.org', '_blank');
   }
 
 }
