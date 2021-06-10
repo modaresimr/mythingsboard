@@ -252,13 +252,13 @@ export class MenuService {
       //   path: '/customers',
       //   icon: 'supervisor_account'
       // },
-      {
-        id: guid(),
-        name: 'asset.assets',
-        type: 'link',
-        path: '/assets',
-        icon: 'domain'
-      },
+      // {
+      //   id: guid(),
+      //   name: 'asset.assets',
+      //   type: 'link',
+      //   path: '/assets',
+      //   icon: 'domain'
+      // },
       {
         id: guid(),
         name: 'device.devices',
@@ -398,16 +398,16 @@ export class MenuService {
       //     }
       //   ]
       // },
-      {
-        name: 'asset.management',
-        places: [
-          {
-            name: 'asset.assets',
-            icon: 'domain',
-            path: '/assets'
-          }
-        ]
-      },
+      // {
+      //   name: 'asset.management',
+      //   places: [
+      //     {
+      //       name: 'asset.assets',
+      //       icon: 'domain',
+      //       path: '/assets'
+      //     }
+      //   ]
+      // },
       {
         name: 'device.management',
         places: [
