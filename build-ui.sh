@@ -1,0 +1,1 @@
+mvn  -DskipTests=true clean install -Ddockerfile.skip=false -X -Dlicense.skip=true -rf :ui-ngx
