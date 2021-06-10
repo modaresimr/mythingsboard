@@ -36,13 +36,13 @@
                 </a>
               </ng-container>
              
-              <div class="container-divider" (click)="alihide = !alihide">
+              <div class="container-divider" (click)="loginHide = !loginHide">
                 <div class="line"><mat-divider></mat-divider></div>
                 <div class="text mat-typography">{{ "login.or" | translate | uppercase }}</div>
                 <div class="line"><mat-divider></mat-divider></div>
               </div>
             </div>
-           <div *ngIf="!alihide" [attr.aria-pressed]="alihide">
+           <div *ngIf="!loginHide" [attr.aria-pressed]="loginHide">
             <mat-form-field>
               <mat-label translate>login.username</mat-label>
               <input id="username-input" matInput type="email" autofocus formControlName="username" email required/>
