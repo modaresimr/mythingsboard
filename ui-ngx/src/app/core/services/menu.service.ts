@@ -377,7 +377,7 @@ export class MenuService {
 
   private buildTenantAdminHome(authState: AuthState): Array<HomeSection> {
     const homeSections: Array<HomeSection> = [];
-    // homeSections.push(
+    homeSections.push(
     //   {
     //     name: 'rulechain.management',
     //     places: [
