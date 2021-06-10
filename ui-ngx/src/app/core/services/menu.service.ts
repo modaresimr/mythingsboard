@@ -238,20 +238,20 @@ export class MenuService {
         notExact: true,
         icon: 'home'
       },
-      {
-        id: guid(),
-        name: 'rulechain.rulechains',
-        type: 'link',
-        path: '/ruleChains',
-        icon: 'settings_ethernet'
-      },
-      {
-        id: guid(),
-        name: 'customer.customers',
-        type: 'link',
-        path: '/customers',
-        icon: 'supervisor_account'
-      },
+      // {
+      //   id: guid(),
+      //   name: 'rulechain.rulechains',
+      //   type: 'link',
+      //   path: '/ruleChains',
+      //   icon: 'settings_ethernet'
+      // },
+      // {
+      //   id: guid(),
+      //   name: 'customer.customers',
+      //   type: 'link',
+      //   path: '/customers',
+      //   icon: 'supervisor_account'
+      // },
       {
         id: guid(),
         name: 'asset.assets',
@@ -274,13 +274,13 @@ export class MenuService {
         icon: 'mdi:alpha-d-box',
         isMdiIcon: true
       },
-      {
-        id: guid(),
-        name: 'firmware.firmware',
-        type: 'link',
-        path: '/firmwares',
-        icon: 'memory'
-      },
+      // {
+      //   id: guid(),
+      //   name: 'firmware.firmware',
+      //   type: 'link',
+      //   path: '/firmwares',
+      //   icon: 'memory'
+      // },
       {
         id: guid(),
         name: 'entity-view.entity-views',
@@ -318,13 +318,13 @@ export class MenuService {
       );
     }
     sections.push(
-      {
-        id: guid(),
-        name: 'widget.widget-library',
-        type: 'link',
-        path: '/widgets-bundles',
-        icon: 'now_widgets'
-      },
+      // {
+      //   id: guid(),
+      //   name: 'widget.widget-library',
+      //   type: 'link',
+      //   path: '/widgets-bundles',
+      //   icon: 'now_widgets'
+      // },
       {
         id: guid(),
         name: 'dashboard.dashboards',
@@ -347,57 +347,57 @@ export class MenuService {
         icon: 'insert_chart',
         notExact: true
       },
-      {
-        id: guid(),
-        name: 'admin.system-settings',
-        type: 'toggle',
-        path: '/settings',
-        height: '80px',
-        icon: 'settings',
-        pages: [
-          {
-            id: guid(),
-            name: 'admin.home-settings',
-            type: 'link',
-            path: '/settings/home',
-            icon: 'settings_applications'
-          },
-          {
-            id: guid(),
-            name: 'resource.resources-library',
-            type: 'link',
-            path: '/settings/resources-library',
-            icon: 'folder'
-          }
-        ]
-      }
+      // {
+      //   id: guid(),
+      //   name: 'admin.system-settings',
+      //   type: 'toggle',
+      //   path: '/settings',
+      //   height: '80px',
+      //   icon: 'settings',
+      //   pages: [
+      //     {
+      //       id: guid(),
+      //       name: 'admin.home-settings',
+      //       type: 'link',
+      //       path: '/settings/home',
+      //       icon: 'settings_applications'
+      //     },
+      //     {
+      //       id: guid(),
+      //       name: 'resource.resources-library',
+      //       type: 'link',
+      //       path: '/settings/resources-library',
+      //       icon: 'folder'
+      //     }
+      //   ]
+      // }
     );
     return sections;
   }
 
   private buildTenantAdminHome(authState: AuthState): Array<HomeSection> {
     const homeSections: Array<HomeSection> = [];
-    homeSections.push(
-      {
-        name: 'rulechain.management',
-        places: [
-          {
-            name: 'rulechain.rulechains',
-            icon: 'settings_ethernet',
-            path: '/ruleChains'
-          }
-        ]
-      },
-      {
-        name: 'customer.management',
-        places: [
-          {
-            name: 'customer.customers',
-            icon: 'supervisor_account',
-            path: '/customers'
-          }
-        ]
-      },
+    // homeSections.push(
+    //   {
+    //     name: 'rulechain.management',
+    //     places: [
+    //       {
+    //         name: 'rulechain.rulechains',
+    //         icon: 'settings_ethernet',
+    //         path: '/ruleChains'
+    //       }
+    //     ]
+    //   },
+      // {
+      //   name: 'customer.management',
+      //   places: [
+      //     {
+      //       name: 'customer.customers',
+      //       icon: 'supervisor_account',
+      //       path: '/customers'
+      //     }
+      //   ]
+      // },
       {
         name: 'asset.management',
         places: [
@@ -422,11 +422,11 @@ export class MenuService {
             isMdiIcon: true,
             path: '/deviceProfiles'
           },
-          {
-            name: 'firmware.firmware',
-            icon: 'memory',
-            path: '/firmwares'
-          }
+          // {
+          //   name: 'firmware.firmware',
+          //   icon: 'memory',
+          //   path: '/firmwares'
+          // }
         ]
       },
       {
@@ -463,11 +463,11 @@ export class MenuService {
       {
         name: 'dashboard.management',
         places: [
-          {
-            name: 'widget.widget-library',
-            icon: 'now_widgets',
-            path: '/widgets-bundles'
-          },
+          // {
+          //   name: 'widget.widget-library',
+          //   icon: 'now_widgets',
+          //   path: '/widgets-bundles'
+          // },
           {
             name: 'dashboard.dashboards',
             icon: 'dashboard',
@@ -490,21 +490,21 @@ export class MenuService {
           }
         ]
       },
-      {
-        name: 'admin.system-settings',
-        places: [
-          {
-            name: 'admin.home-settings',
-            icon: 'settings_applications',
-            path: '/settings/home'
-          },
-          {
-            name: 'resource.resources-library',
-            icon: 'folder',
-            path: '/settings/resources-library'
-          }
-        ]
-      }
+      // {
+      //   name: 'admin.system-settings',
+      //   places: [
+      //     {
+      //       name: 'admin.home-settings',
+      //       icon: 'settings_applications',
+      //       path: '/settings/home'
+      //     },
+      //     {
+      //       name: 'resource.resources-library',
+      //       icon: 'folder',
+      //       path: '/settings/resources-library'
+      //     }
+      //   ]
+      // }
     );
     return homeSections;
   }
